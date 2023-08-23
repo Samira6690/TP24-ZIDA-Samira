@@ -13,6 +13,7 @@
         height: 80px;
         width: 100%;
         background: #e4e81a;
+        
     }
         
     
@@ -22,11 +23,14 @@
     nav ul{
 float: right;
 margin-right: 20px;
+
     }
+
     nav li{
         display: inline-block;
         margin: 0 8px;
         line-height: 60px;
+        
     }
     nav a{
         color: white;
@@ -35,6 +39,7 @@ margin-right: 20px;
         border: 1px solid transparent;
         padding: 7px;
         border-radius: 3px;
+        
     }
     a.actve,a:hover{
         border: 1px solid rgb(13, 44, 115);
@@ -47,7 +52,7 @@ margin-right: 20px;
         float: right;
         margin-right: 40px;
         cursor: pointer;
-        display: none;
+        /* display: none; */
     }
     @media (max-width:300px){
         nav{
@@ -164,6 +169,7 @@ display: block;
 .red-btn:hover{
    background-color:  yellow; 
     color: #f44336;
+    background-color: chartreuse;
 }
 .content h4{
 color: rgb(13, 11, 11);
@@ -176,7 +182,7 @@ color: rgb(13, 11, 11);
 margin-top: 20px;
 }
 .V{
-    background-color: rgb(198, 215, 213);
+    background: #e4e81a;
 }
 .Q{
     text-align: center;
@@ -221,6 +227,7 @@ margin-top: 20px;
 }
 .const{
     background: #d9e5e4;
+    
 }
 .card-img-top:hover{
     transform: scale(1.05);
@@ -229,21 +236,51 @@ margin-top: 20px;
 }
 .content3{
     display: flex;
-    justify-content:;
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .content3 img{
+    z-index: 1;
     width: 100%;
-    margin-left: 40px;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.content3 img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.text-start{
+    margin-top: 80px;
+    background: #e3dbfe;
+   
+}
+.text-start:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
 }
 .content3 h1{
     font-size: 35px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     margin-left: 70px;
+    margin-top: 5%;
+    flex-direction: column;
+}
+@media (max-width:300px){
+    .content3{
+        width: 100%;
+        flex-direction: column !important;
+    }
 }
 .content3 h5{
-    font-size: 25px;
-    margin-top: 40px;
+    font-size: 22px;
+    /* margin-top: 40px; */
     margin-left: 70px;
+
 }
 .container{
 display: flex;
@@ -260,6 +297,18 @@ padding-left: 10px;
 .S h2{
     align-items: center;
     text-align: center;
+    color: white;
+}
+.cale{
+    background: white;
+    width: 100%;
+}
+.col-lg-4{
+    width: 100%;
+}
+.col-lg-4:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 .content4{
     text-align: center;
@@ -300,5 +349,29 @@ padding-left: 10px;
     transition: 0.5s;
 }
 .layer :hover{
-    background: blue;
+    background: #e4e81a;
+}
+.input{
+    padding: 20px;
+    margin: 10px;
+    border: none;
+    border-bottom: 2px solid #e6e6e6;
+}
+.input-control input:focus {
+    outline: 0;
+}
+.input-control.succes input {
+    border-color: aqua;
+}
+.input-control.error input {
+    border-color: red;
+}
+.input-control  .error {
+    color: #ff3860;
+font-size: 9px;
+height: 13px;
+}
+.ave{
+    text-align: center;
+    font-size: 20px;
 }
